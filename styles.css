@@ -1,0 +1,189 @@
+*{
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url(./assests/fonts/Poppins/Poppins-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Source Serif';
+    src: url(./assests/fonts/Source_Serif_4/static/SourceSerif4-Bold.ttf);
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    background: #202C2E;
+}
+
+/* Header Section Start */
+header{
+    z-index: 1;
+}
+
+.navbar{
+    background: #2b393c;
+}
+
+.nav-item{
+    border: none;
+    height: 50px;
+    transition: border-bottom 0.2s ease-in-out;
+}
+
+.nav-item:hover{
+    border-bottom: 1px solid white;
+}
+/* Header Section End */
+
+/* Hero Section Start */
+.hero{
+    margin-top: 97px;
+}
+
+.title{
+    color: yellow;
+    letter-spacing: 3px;
+    font-family: 'Source Serif';
+}
+
+span{
+    color: yellow;
+}
+
+.poppins{
+    font-family: 'Poppins';
+}
+
+/* about me button start */
+.button1 {
+    display: inline-block;
+    transition: all 0.2s ease-in;
+    position: relative;
+    overflow: hidden;
+    z-index: 0;
+    color: #090909;
+    cursor: pointer;
+    font-size: 18px;
+    font-family: "Poppins";
+    border-radius: 30px;
+    background: #e8e8e8;
+    border: 1px solid #e8e8e8;
+    box-shadow: 2px 2px 12px #c5c5c5, 1px 4px 12px #ffffff;
+  }
+  
+  .button1:active {
+    color: #666;
+    box-shadow: inset 4px 4px 12px #c5c5c5, inset -4px -4px 12px #ffffff;
+  }
+  
+  .button1:before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%) scaleY(1) scaleX(1.25);
+    top: 100%;
+    width: 140%;
+    height: 180%;
+    background-color: rgba(0, 0, 0, 0.05);
+    border-radius: 50%;
+    display: block;
+    transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+    z-index: -1;
+  }
+  
+  .button1:after {
+    content: "";
+    position: absolute;
+    left: 55%;
+    transform: translateX(-50%) scaleY(1) scaleX(1.45);
+    top: 180%;
+    width: 160%;
+    height: 190%;
+    background-color: #009087;
+    border-radius: 50%;
+    display: block;
+    transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+    z-index: -1;
+  }
+  
+  .button1:hover {
+    color: #ffffff;
+    border: 1px solid #016f67;
+  }
+  
+  .button1:hover:before {
+    top: -35%;
+    background-color: #016f67;
+    transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+  }
+  
+  .button1:hover:after {
+    top: -45%;
+    background-color: #016f67;
+    transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+  }
+/* about me button end*/
+/* Hero Section End */
+
+/* Educatoion Section Start */
+.circle{
+    border: 1px solid yellow;
+    width: 50px;
+    height: 50px;
+    border-radius: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.graduate-cap{
+    color: yellow;
+    font-size: 25px;
+}
+
+.vertical-line{
+    border-left: 1px solid black;
+    height: 70px;
+}
+
+.edu-desc{
+    color: yellow;
+}
+/* Educatoion Section End */
+
+/* No css for Skills Section */
+
+/* Contact Me Section Start  */
+
+.phone-icon{
+    color: yellow;
+    font-size: 25px;
+    transform: rotate(-38deg);
+}
+
+.contact-icon{
+    color: yellow;
+    font-size: 25px;
+}
+
+/* Contact Me Section End */
+
+/* Footer Section Start  */
+footer{
+    background: #157071;
+}
+
+.footer-ul{
+    list-style-type: none;
+    display: flex;
+}
+
+.footer-link{
+    text-decoration: none;
+    color: white;    
+}
+/* Footer Section End */
+
